@@ -344,7 +344,7 @@ This project is part of academic coursework at Northeastern University.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Yahoo Finance for providing options market data API
 - Snowflake for Cortex AI capabilities
@@ -353,4 +353,4 @@ This project is part of academic coursework at Northeastern University.
 
 ---
 
-**Note:** Add your architecture diagram as `architecture_diagram.png` and user flow diagram as `user_flow_diagram.png` in the repository root directory.
+
