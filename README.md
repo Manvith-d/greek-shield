@@ -1,4 +1,16 @@
-# Greek Shield
+<p align="center"><img src="project-banner.svg" alt="GREEK SHIELD: Options data. Risk signals. Agent-assisted insight." width="100%"/></p>
+
+<h1 align="center">Greek Shield</h1>
+
+<p align="center">Options data. Risk signals. Agent-assisted insight.</p>
+
+<p align="center"><code>Python</code> &nbsp; <code>Snowflake</code> &nbsp; <code>AWS S3</code> &nbsp; <code>Streamlit</code></p>
+
+<p align="center"><a href="#architecture-at-a-glance">Architecture at a glance</a> · <a href="#at-a-glance">At a glance</a> · <a href="#explore-the-implementation">Explore the implementation</a> · <a href="#environment">Environment</a> · <a href="#team-and-project-lineage">Team and project lineage</a></p>
+
+<table><tr><td width="33%" valign="top"><h3>Market to warehouse</h3><p>A layered pipeline connects options data with risk analysis.</p></td><td width="33%" valign="top"><h3>Five risk sensitivities</h3><p>Delta, Gamma, Theta, Vega, and Rho form the quantitative core.</p></td><td width="33%" valign="top"><h3>Agent-assisted insight</h3><p>Python agents and Cortex support dashboard interpretation.</p></td></tr></table>
+
+---
 
 Maintained on Manvith Reddy Dalli’s GitHub as a credited fork of [the original team implementation](https://github.com/LikhithNG/New-Greek-shield-).
 
@@ -6,7 +18,15 @@ Maintained on Manvith Reddy Dalli’s GitHub as a credited fork of [the original
 
 Greek Shield brings Yahoo Finance options data through AWS S3 and Snowflake, calculates Black–Scholes Greeks, and exposes risk analysis through a Streamlit dashboard. This team project connects data engineering, quantitative modeling, and agent-assisted interpretation.
 
+## Architecture at a glance
+
+![Greek Shield workflow](project-workflow.svg)
+
+<details><summary><b>Explore the full system architecture</b></summary>
+
 ![Greek Shield architecture](architecture_diagram.png)
+
+</details>
 
 ## At a glance
 
