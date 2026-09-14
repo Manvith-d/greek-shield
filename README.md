@@ -1,3 +1,49 @@
+# Greek Shield
+
+Maintained on Manvith Reddy Dalli’s GitHub as a credited fork of [the original team implementation](https://github.com/LikhithNG/New-Greek-shield-).
+
+**Options risk analytics powered by a layered data pipeline and AI agents.**
+
+Greek Shield brings Yahoo Finance options data through AWS S3 and Snowflake, calculates Black–Scholes Greeks, and exposes risk analysis through a Streamlit dashboard. This team project connects data engineering, quantitative modeling, and agent-assisted interpretation.
+
+![Greek Shield architecture](architecture_diagram.png)
+
+## At a glance
+
+| Area | Implementation |
+| --- | --- |
+| Data ingestion | Python, Yahoo Finance, AWS S3 |
+| Warehouse | Six-layer Snowflake pipeline |
+| Risk calculations | Delta, Gamma, Theta, Vega, Rho |
+| Agent-assisted analysis | Snowflake Cortex and Python agents |
+| User experience | Streamlit dashboard |
+| Notifications | Slack risk-alert integration |
+
+## Explore the implementation
+
+- `final_complete_pipeline.py`: end-to-end processing workflow.
+- `yahoo_to_s3_to_snowflake.py`: ingestion integration.
+- `calculate_greeks.py` and `analyze_greeks.py`: quantitative calculations and analysis.
+- `streamlit_dashboard.py`: interactive risk dashboard.
+- `llm_manager.py` and agent modules: AI integration and monitoring.
+
+## Environment
+
+Install the project dependencies in an isolated Python environment. The checked-in requirements cover the base pipeline; integration modules may require additional packages such as the AWS SDK.
+
+Snowflake, AWS, Cortex, and Slack workflows need separately configured accounts and resources. Review the selected entry point’s environment-variable names and warehouse/table assumptions. Do not commit account credentials. The dashboard can be launched with `streamlit run streamlit_dashboard.py` after its integrations are configured.
+
+## Team and project lineage
+
+Likhith Nagaralu Gurumurthy · Manvith Reddy Dalli · Sneh Patel.
+
+[Earlier pipeline](https://github.com/LikhithNG/Greek-shield) · [Cleaned local implementation](https://github.com/Manvith-d/options-risk-monitor).
+
+This is an academic analytics project. Metrics in the original project documentation below describe that project’s reported runs and design targets; they are not independently verified production or investment-performance benchmarks.
+
+<details>
+<summary>Original team documentation and detailed architecture</summary>
+
 # 🛡️ Greek Shield
 
 **AI-Enhanced Options Risk Analytics Platform with Multi-Agent Orchestration**
@@ -354,3 +400,6 @@ This project is part of academic coursework at Northeastern University.
 ---
 
 
+
+
+</details>
